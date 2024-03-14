@@ -1,0 +1,143 @@
+/* PROFILE PAGE */
+.description_area{
+    width:36em;
+    max-width:100%;
+}
+
+div.container.profile-container {
+    max-width: 630px;
+    margin: 0 auto;
+    padding-top:9em ;
+    border-radius: 10px;
+}
+
+.and_column {
+    width: 0.5px;
+}
+
+.nophotos{
+max-width:522px;
+height:3.5em;
+}
+
+/* and column invisible in mobiles */
+@media (max-width: 768px) {
+.and_column {
+    display: none;
+
+}
+
+.nophotos{
+max-width:317px;
+margin-left:0.6em;
+padding-top:0.6em;
+height:3em;
+}
+
+.profile_input{
+    margin-bottom:6px;
+}
+
+div.container.profile-container {
+    max-width: 630px;
+    margin: 0 auto;
+    padding-top:1.2em ;
+    border-radius: 10px;
+}
+
+
+}
+/* END OF PROFILE */
+
+/*  GRID CONTAINER */
+
+
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 165px) !important;
+    grid-gap: 16px;
+ }
+
+.no_pictures_alert{
+background-color:#E5D283;
+margin-right:5em;
+
+}
+   .grid-item {
+    width: 160px;
+    height: 200px;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    justify-self: center;
+  }
+
+ @media (max-width: 768px) {
+.and_column {
+    display: none;
+}
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px) !important;
+    grid-gap: 10px;
+ }
+   .grid-item {
+   margin-left:1em;
+    width: 100px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+   .addPhotoCircle {
+    width: 20px; /* Adjust the size of the circular photo container */
+    height: 20px; /* Adjust the size of the circular photo container */
+    background-color: white;
+    border-radius: 50%; /* Create a circular shape */
+    display: flex;
+    align-items: flex-end; /* Align the content (photo) to the bottom */
+    justify-content: flex-end; /* Align the content (photo) to the right */
+    position: absolute; /* Position it within the grid item */
+    bottom: 5px; /* Adjust the position from the bottom */
+    right: 5px; /* Adjust the position from the right */
+    cursor:pointer;
+  }
+
+  .grid-item img.addButton {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid-item img.photoImg {
+    width: 100%;
+    object-fit: cover;
+    display: none;
+  }
+
+  .grid-item img.active {
+    display: block;
+  }
+
+  input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /*  END OF GRID CONTAINER */
