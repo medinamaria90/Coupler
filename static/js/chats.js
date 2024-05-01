@@ -31,10 +31,7 @@ $(document).ready(function(){
       leftDiv.prepend(chatDiv);
     }
 
-    var socket = io.connect('https://' + document.domain + ':' + location.port, {
-        transports: ['websocket'],
-        secure : true
-    });
+    var socket = io.connect('http://' + location.hostname + ':' + location.port);
     socket.emit('join_rooms');
     
     // Manejar la respuesta del servidor

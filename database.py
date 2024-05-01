@@ -260,6 +260,7 @@ class DatabaseManager:
 
     @classmethod
     def save_chat(cls, message, match_id, sender_id, first_message):
+        print("In save chat")
         fecha_actual = datetime.now()
         new_chat = Chats(match_id_fk=match_id, couple_id_fk=sender_id, message=message,
                                          date=fecha_actual, read=False)
@@ -269,6 +270,7 @@ class DatabaseManager:
             match= DatabaseManager.get_match_by_match_id(match_id=match_id)
             match.conversation_opened=1
             db.session.commit()
+            print("Message saved prob")
         return "correct"
 
     @classmethod

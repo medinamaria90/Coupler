@@ -14,6 +14,15 @@ padding: 0;
 margin: 0;
 }
 
+.home_background{
+    background-color:#479ac9 ;
+    height: 100vh;
+}
+
+.home_logo{
+    color:white !important;
+}
+
 html, body, #fullheight {
     min-height: 100% !important;
     height: 100%;
@@ -86,9 +95,7 @@ img.photo.scrolling_photo {
 }
 }
 
-.jumbotron {
-    background-color: transparent;
-}
+
 
 .title_color{
 color:var(--main-yellow);
@@ -101,7 +108,11 @@ color:white!important;
 
 .jumbotron h1{
 font-weight:600;
-font-size: 6em;
+font-size: 5em;
+}
+
+h3.home_white_text{
+    font-size: 1.5em;
 }
 
  @media (max-width: 768px) {
@@ -112,14 +123,14 @@ font-size: 5em;
 }
 
 #img_1_home{
-width:17.8em;
+width:15.8em;
 margin-top:0em;
 margin-right:-14em;
 z-index:1;
 position:relative
 }
 #img_2_home{
-width:24.5em;
+width:21.5em;
 margin-top:0em;
 margin-right:-4em;
 z-index:2;
