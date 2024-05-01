@@ -16,7 +16,7 @@ from database import DatabaseManager
 from forms import MyProfile
 from flask_wtf.csrf import CSRFProtect
 import traceback
-from config import app, mail, production, current_year, GOOGLE_CLIENT_ID
+from config import app, mail, production, current_year, GOOGLE_CLIENT_ID, redirect_uri
 from flask_socketio import SocketIO, send, join_room, leave_room
 
 ALLOWED_EXTENSIONS = {'jpg', 'png', 'jpeg'}
@@ -25,10 +25,11 @@ UPLOAD_DIRECTORY = f'user_uploads/profileimages'
 csrf = CSRFProtect()
 
 client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
+
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file,
     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
-    redirect_uri="http://127.0.0.1:4723/callback"
+    redirect_uri=redirect_uri
 )
 # Creating the login manager so Flask can handle login, and logout
 login_manager_app = flask_login.LoginManager(app)

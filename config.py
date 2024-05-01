@@ -7,6 +7,12 @@ import datetime
 
 load_dotenv()
 production = True
+
+if production == True:
+    redirect_uri = "https://coupler-medinamaria90.eu.pythonanywhere.com/callback"
+else:
+    redirect_uri = "http://127.0.0.1:4723/callback"
+
 class Config:
     def __init__(self, production = False):
         self.production = production
