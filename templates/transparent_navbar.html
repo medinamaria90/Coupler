@@ -2,7 +2,6 @@
 <head>
     <link href="{{ url_for('static', filename='css/navbar_styles.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 
 <nav class="navbar-desktop navbar navbar-expand-lg fixed-top navigation navbar-light navbar_background">
@@ -15,14 +14,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto text-center home_page">
-
                 {% if current_user.is_authenticated is false %}
                 <li class="navbar-item ps-3">
                     <a class="nav-link my_navbar transparent_link" href="" id="projects_navbar">
                         Iniciar Sesión</a>
                 </li>
                 {% endif %}
-
                 {% if current_user.is_authenticated %}
                 <li class="navbar-item my_navbar ps-3" id="home_li">
                     <a class="nav-link my_navbar transparent_link" id="home_navbar" href={{  url_for('buscar') }}>
@@ -52,9 +49,7 @@
             <a href="#"><i class=" fas fa-arrow-left"></i></a>
         </div>
         <!-- Elemento 2 -->
-
         {% if current_user.is_authenticated  %}
-
         <div class="col text-center">
             <a href={{ url_for('chats') }}><i class="fas fa-envelope"></i></a>
         </div>
