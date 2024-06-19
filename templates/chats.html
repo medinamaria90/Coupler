@@ -11,7 +11,6 @@
     <!--        Navbar-->
     {% include "transparent_navbar.html" %}
 </header>
-
 <main>
     <div class="all_content row" data-user-id="{{ user_id }}" id="all_content">
         <!--            MATCHES & CHATS-->
@@ -27,7 +26,6 @@
                         <img class="match_img"
                              src="{{ url_for('serve_upload', filename=match.folder + '/photo1.jpg') }}">
                     </div>
-
                     <div class="card-body matches_names_div">
                         <div class="data_div" data-age1="{{ match.age1 }}" data-age2="{{ match.age2 }}"
                              data-name1="{{ match.name1 }}" data-name2="{{ match.name2 }}"></div>
@@ -56,7 +54,6 @@
                      class="row chats_div border-bottom chat new_message" conversation-folder="{{match.folder}}"
                      data-match_id="{{ match.match_id }} ">
                 {% endif %}
-
                         <div class="col-2 col-lg-2 ">
                             <div class="chat_div_img">
                                 <img class="match_img chat_img"
@@ -98,17 +95,10 @@
                         {% endif %}
                     </div>
                     {% endif %}
-<!--                   {% if match.last_msj_read != true %}-->
-<!--                    <div class="circle"></div>-->
-<!--                    {% endif %}-->
-
                     {% endfor %}
-
                 </div>
-
             </div>
             <!--            Fin de left div-->
-
             <!--                CHAT-->
             <div class="col-lg-6 middle_column" id="middle_column">
                 <div id="messenger_div">
@@ -153,18 +143,14 @@
                 </div>
             </div>
 
-
             <!--          RIGHT COUPLE -- PREVIEW-->
             <div class="col-lg-3 couple_preview" id="right_column">
                 <!--        PHOTOS CARROUSEL-->
-
                 <div class="carousel slide" data-bs-interval="false" data-bs-touch="false" id="carouselindicators">
                     <div class="carousel-indicators" id="carouselIndicators">
-
                     </div>
                     <div class="carousel-inner">
                         <!--                    The content will be added with javascript-->
-
                     </div>
                     <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselindicators"
                             type="button">

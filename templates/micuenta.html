@@ -13,15 +13,10 @@
 <head>
     <!--        Navbar-->
     {% include "transparent_navbar.html" %}
-
     <link href="{{ url_for('static', filename='css/micuenta_styles.css') }}" rel="stylesheet">
-
 </head>
 
-
-
 <div class="container profile-container ">
-
     <form action="/profile" autocomplete="off" enctype="multipart/form-data" method="POST">
         <section class="mb-5 ">
             {% if message is not none %}
@@ -33,7 +28,6 @@
                 </strong>
             </div>
             {% endif %}
-
             <div class="grid-container ">
                 <!--                The list photos contains, first, the directory, second, all the photos in the directory -->
                 <div class="grid-item ">
@@ -46,22 +40,17 @@
                 </div>
             </div>
 
-
         </section>
         <!--Nombres-->
         <section class="mb-2 ">
                 <h5 class="mb-3 ">¿Cómo os llamais?</h5>
                 <div class="row ">
                     <div class="col-md-4">
-
                     </div>
-
                     <div class="col-1 and_column text-center">
                         <p class="mt-2 ">y</p>
                     </div>
-
                     <div class="col-md-4">
-
                     </div>
                 </div>
         </section>
@@ -70,15 +59,11 @@
                 <h5 class="mb-3 ">¿Qué edad tenéis?</h5>
             <div class="row ">
                 <div class="col-md-4">
-
-
                 </div>
                 <div class="col-md-1 and_column text-center">
                     <p class="mt-2">y</p>
                 </div>
                 <div class="col-md-4">
-
-
                 </div>
             </div>
         </section>
@@ -87,47 +72,32 @@
                 <h5 class="mb-3">¿Con qué género os identificáis?</h5>
             <div class="row  ">
                 <div class="col-md-4">
-
                 </div>
                 <div class="col-md-1 and_column text-center">
                     <p class="mt-2">y</p>
                 </div>
                 <div class="col-md-4">
-
                 </div>
             </div>
         </section>
         <!--ETIQUETAS-->
-
         <section class="mb-3">
             <div class="form-group labels_section">
                 <h5 class="mb-3 ">Vuestras etiquetas</h5>
                 <div class="" id="checkbox-container" >
-
                 </div>
             </div>
-
         </section>
 <!--SOBRE VOSOTROS-->
         <section class="">
             <h5 class="mb-3 ">Contadnos sobre vosotros</h5>
-            <textarea class="  form-control description_area" maxlength="600"
-
-                      rows="5"></textarea>
+            <textarea class="  form-control description_area" maxlength="600" rows="5"></textarea>
             <br>
         </section>
-
-
-
         <button  class="btn btn-secondary ms-1 mb-4 btn-cerrar-sesion" type="button"> Cerrar sesión</button>
-
-
         <br>
-
-
     </form>
 </div>
-
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
