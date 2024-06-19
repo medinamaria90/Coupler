@@ -1,0 +1,168 @@
+.scrolling_container{
+margin-top: 9em;
+}
+
+.carrousel_row{
+margin-left:14em;
+}
+
+ @media (max-width: 768px) {
+.carrousel_row{
+margin-left:0em;
+}
+
+}
+
+
+.carousel-button-circle {
+    position: absolute;
+    width: 50px; /* Ajusta el tamaño de los círculos según tus necesidades */
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del círculo */
+    border-radius: 50%; /* Para hacerlos circulares */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2; /* Para que estén por encima de las imágenes del carrusel */
+}
+
+.swipe_icons{
+width: 100%; /* La imagen ocupará el 100% del ancho del contenedor (right-circle) */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+    display: block; /* Asegura que la imagen no tenga márgenes no deseados */
+
+}
+
+div span.badge.personalized_badge{
+font-weight:510;
+font-size:0.9em;
+margin:0.3em 0.1em 0em;
+background-color:var(--main-blue) !important;
+}
+
+ @media (max-width: 768px) {
+div span.badge.personalized_badge{
+margin-top:0.5em;
+font-size:1em;
+}
+
+}
+
+div span.badge.gender_badge{
+display: inline;
+font-size:1.1em;
+position:relative;
+top:-2px;
+background-color:var(--main-yellow) !important;
+color:black;
+}
+
+.left-circle {
+    bottom: 15px; /* Ajusta la posición vertical según tus necesidades */
+    left: 12px; /* Ajusta la posición horizontal según tus necesidades */
+}
+
+.right-circle {
+    bottom: 15px; /* Ajusta la posición vertical según tus necesidades */
+    right: 12px; /* Ajusta la posición horizontal según tus necesidades */
+}
+
+
+img.photo.scrolling_photo {
+    width: 350px;
+    height: 437.5px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+p.card-text{
+font-family: 'Karla', sans-serif;
+}
+
+.card-header{
+padding-top:0em;
+padding-bottom:0.9em;
+}
+
+
+
+h3.couples_names{
+font-weight:650;
+ display: inline;
+}
+
+
+#photos_box{
+width:400px;
+}
+
+
+.empty_text{
+margin-top:2em;
+color:white;
+font-size:50px;
+font-weight:500;
+}
+
+#photos_box_empty{
+background-color:grey;
+width:400px;
+border-radius:20px
+}
+
+div div img{
+border-radius: 8px;
+}
+
+h6{
+font-size:1.2em;
+}
+
+ @media (max-width: 768px) {
+.scrolling_container{
+margin-top: 1em;
+margin-left:0em;
+}
+
+#photos_box{
+
+width:400px;
+
+}
+}
+
+div.couples_profile_container{
+width: 400px;
+height: 472px;
+margin-left:0em;
+border-radius:8px;
+padding-bottom:1em;
+
+}
+
+ @media (max-width: 768px) {
+.card.couples_profile_container{
+margin-top:1em;
+width:100%;
+height:100%;
+padding-bottom:0em;
+}
+
+}
+
+.combined_text_elements{
+display: inline-block; /* Esto hará que los elementos estén en la misma línea */
+white-space: nowrap;
+}
+
+div.couple_description_box{
+background:white;
+border-radius:4px;
+padding:0.5em;
+}
+
+
+
+
+
